@@ -1,0 +1,108 @@
+[INFO ] 26-02-2020 06:32:53.449 PM [main]  com.viswagopi.TownServiceApplication - The following profiles are active: dev
+[INFO ] 26-02-2020 06:33:31.455 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 06:35:46.134 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 06:42:26.258 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 06:45:42.600 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 06:48:48.494 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 06:49:51.169 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 06:50:49.243 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 06:50:52.261 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.46 seconds (JVM running for 3.822)
+[INFO ] 26-02-2020 06:52:09.806 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 06:52:13.256 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.908 seconds (JVM running for 4.262)
+[INFO ] 26-02-2020 07:05:51.889 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:05:54.885 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.451 seconds (JVM running for 4.232)
+[INFO ] 26-02-2020 07:08:39.312 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:08:42.555 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.709 seconds (JVM running for 4.083)
+[INFO ] 26-02-2020 07:10:46.381 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:10:49.601 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.638 seconds (JVM running for 4.005)
+[INFO ] 26-02-2020 07:12:35.025 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:12:37.974 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.361 seconds (JVM running for 3.744)
+[INFO ] 26-02-2020 07:14:21.063 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:14:24.125 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.508 seconds (JVM running for 3.866)
+[INFO ] 26-02-2020 07:19:35.783 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:19:38.840 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.487 seconds (JVM running for 3.843)
+[INFO ] 26-02-2020 07:22:49.959 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:22:53.087 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.556 seconds (JVM running for 3.947)
+[INFO ] 26-02-2020 07:25:08.130 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:25:11.152 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.467 seconds (JVM running for 3.817)
+[INFO ] 26-02-2020 07:37:15.928 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:37:18.917 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.395 seconds (JVM running for 3.758)
+[INFO ] 26-02-2020 07:52:49.450 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:52:52.482 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.497 seconds (JVM running for 3.869)
+[INFO ] 26-02-2020 07:56:40.330 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 07:56:43.440 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.552 seconds (JVM running for 3.898)
+[INFO ] 26-02-2020 08:02:28.857 PM [main]  com.viswagopi.TownServiceApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 08:02:34.398 PM [main]  com.viswagopi.TownServiceApplicationTests - Started TownServiceApplicationTests in 6.16 seconds (JVM running for 7.237)
+[INFO ] 26-02-2020 08:02:48.977 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 08:02:51.989 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.445 seconds (JVM running for 3.82)
+[INFO ] 26-02-2020 08:25:03.802 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 08:25:06.774 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.384 seconds (JVM running for 3.739)
+[INFO ] 26-02-2020 08:26:38.483 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 08:26:41.968 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.904 seconds (JVM running for 4.261)
+[INFO ] 26-02-2020 08:28:32.858 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 08:28:35.853 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.425 seconds (JVM running for 3.794)
+[INFO ] 26-02-2020 08:39:02.226 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 08:39:05.270 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.453 seconds (JVM running for 3.916)
+[INFO ] 26-02-2020 08:53:32.113 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 08:53:35.116 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.442 seconds (JVM running for 3.813)
+[INFO ] 26-02-2020 08:59:29.912 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 08:59:33.077 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.587 seconds (JVM running for 3.964)
+[INFO ] 26-02-2020 09:05:07.661 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:05:10.779 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.599 seconds (JVM running for 4.048)
+[INFO ] 26-02-2020 09:13:09.938 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:13:13.257 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.76 seconds (JVM running for 4.124)
+[INFO ] 26-02-2020 09:13:42.487 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:13:45.819 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.8 seconds (JVM running for 4.165)
+[INFO ] 26-02-2020 09:15:11.732 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:15:14.751 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.432 seconds (JVM running for 3.787)
+[INFO ] 26-02-2020 09:18:44.826 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:18:47.843 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.456 seconds (JVM running for 3.81)
+[INFO ] 26-02-2020 09:24:30.962 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:24:33.925 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.409 seconds (JVM running for 3.753)
+[INFO ] 26-02-2020 09:39:27.737 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:39:31.245 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 4.033 seconds (JVM running for 4.427)
+[INFO ] 26-02-2020 09:42:03.312 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:42:06.334 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.424 seconds (JVM running for 3.779)
+[INFO ] 26-02-2020 09:44:55.328 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:44:58.487 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.573 seconds (JVM running for 3.921)
+[INFO ] 26-02-2020 09:56:54.722 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:56:57.707 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.427 seconds (JVM running for 3.808)
+[INFO ] 26-02-2020 09:58:01.963 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 09:58:04.913 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.391 seconds (JVM running for 3.755)
+[INFO ] 26-02-2020 10:01:13.015 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:01:16.000 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.416 seconds (JVM running for 3.78)
+[INFO ] 26-02-2020 10:03:14.953 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:03:18.059 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.51 seconds (JVM running for 3.862)
+[INFO ] 26-02-2020 10:04:41.572 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:04:44.590 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.458 seconds (JVM running for 3.82)
+[INFO ] 26-02-2020 10:17:25.358 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:17:28.584 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.692 seconds (JVM running for 4.162)
+[INFO ] 26-02-2020 10:18:50.848 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:18:53.989 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.58 seconds (JVM running for 3.978)
+[INFO ] 26-02-2020 10:24:52.594 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:24:55.895 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.723 seconds (JVM running for 4.241)
+[INFO ] 26-02-2020 10:26:55.832 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:26:59.032 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.653 seconds (JVM running for 4.183)
+[INFO ] 26-02-2020 10:32:02.728 PM [main]  com.viswagopi.TownServiceApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:32:08.250 PM [main]  com.viswagopi.TownServiceApplicationTests - Started TownServiceApplicationTests in 6.209 seconds (JVM running for 7.057)
+[INFO ] 26-02-2020 10:32:22.921 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:40:14.623 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:40:19.611 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 5.816 seconds (JVM running for 6.738)
+[INFO ] 26-02-2020 10:41:47.702 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:41:50.638 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.367 seconds (JVM running for 3.756)
+[INFO ] 26-02-2020 10:45:05.874 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:45:09.246 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.81 seconds (JVM running for 4.191)
+[INFO ] 26-02-2020 10:55:15.121 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:55:22.822 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 9.248 seconds (JVM running for 10.813)
+[INFO ] 26-02-2020 10:56:25.862 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 26-02-2020 10:56:28.856 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.459 seconds (JVM running for 3.847)
+[INFO ] 28-02-2020 02:04:36.942 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 28-02-2020 02:05:00.454 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 28-02-2020 02:05:03.764 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.762 seconds (JVM running for 4.139)
+[INFO ] 28-02-2020 02:06:05.252 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 28-02-2020 02:06:08.533 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.719 seconds (JVM running for 4.228)
+[INFO ] 28-02-2020 02:09:01.466 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 28-02-2020 02:09:04.685 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 4.217 seconds (JVM running for 4.638)
+[INFO ] 28-02-2020 02:11:05.198 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 28-02-2020 02:12:02.585 PM [main]  com.viswagopi.TownServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 28-02-2020 02:12:05.719 PM [main]  com.viswagopi.TownServiceApplication - Started TownServiceApplication in 3.616 seconds (JVM running for 4.048)

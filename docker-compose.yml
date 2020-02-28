@@ -1,0 +1,207 @@
+version: "3"
+
+networks:
+  some-net:
+    driver: bridge
+
+volumes:
+  db_town:
+  db_branch:
+  db_empcard:
+  db_product:
+  db_emp:
+  
+services:
+
+  mysql-town:
+    image: mysql:5.7.29
+    ports: 
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=town_info
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - TZ=Asia/Kolkata
+    volumes:
+      - db_town:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+
+    restart: on-failure
+    networks:
+      - some-net
+
+  mysql-branch:
+    image: mysql:5.7.29
+    ports: 
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=branch_info
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - TZ=Asia/Kolkata
+    volumes:
+      - db_branch:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+
+    restart: on-failure
+    networks:
+      - some-net
+
+  mysql-empcard:
+    image: mysql:5.7.29
+    ports: 
+      - 3308:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=empcard_info
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - TZ=Asia/Kolkata
+    volumes:
+      - db_empcard:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+
+    restart: on-failure
+    networks:
+      - some-net 
+
+  mysql-product:
+    image: mysql:5.7.29
+    ports: 
+      - 3309:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=product_info
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - TZ=Asia/Kolkata
+    volumes:
+      - db_product:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+
+    restart: on-failure
+    networks:
+      - some-net 
+
+  mysql-emp:
+    image: mysql:5.7.29
+    ports: 
+      - 3310:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=emp_info
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - TZ=Asia/Kolkata
+    volumes:
+      - db_emp:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+
+    restart: on-failure
+    networks:
+      - some-net 
+
+  naming-service:
+    image: gopinathviswa/naming-service
+    ports:
+      - 8761:8761
+    restart: on-failure
+    networks:
+      - some-net
+
+  gateway-service:
+    image: gopinathviswa/gateway-service
+    ports:
+      - 8090:8090
+    environment:
+      - EUREKA_SERVER=naming-service
+    restart: on-failure
+    networks:
+      - some-net
+
+  report-service:
+    image: gopinathviswa/report-service
+    ports:
+      - 8105:8105
+    environment:
+      - EUREKA_SERVER=naming-service
+    restart: on-failure
+    networks:
+      - some-net
+
+  town-service:
+    image: gopinathviswa/town-service
+    ports:
+      - 8100:8100
+    environment:
+      - MYSQL_HOST=mysql-town
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - MYSQL_DB=town_info  
+      - MYSQL_PORT=3306
+      - EUREKA_SERVER=naming-service
+    restart: on-failure
+    networks:
+      - some-net
+
+  branch-service:
+    image: gopinathviswa/branch-service
+    ports:
+      - 8101:8101
+    environment:
+      - MYSQL_HOST=mysql-branch
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - MYSQL_DB=branch_info  
+      - MYSQL_PORT=3306
+      - EUREKA_SERVER=naming-service
+    restart: on-failure
+    networks:
+      - some-net
+
+  empcard-service:
+    image: gopinathviswa/empcard-service
+    ports:
+      - 8102:8102
+    environment:
+      - MYSQL_HOST=mysql-empcard
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - MYSQL_DB=empcard_info  
+      - MYSQL_PORT=3306
+      - EUREKA_SERVER=naming-service
+    restart: on-failure
+    networks:
+      - some-net
+
+  product-service:
+    image: gopinathviswa/product-service
+    ports:
+      - 8103:8103
+    environment:
+      - MYSQL_HOST=mysql-product
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - MYSQL_DB=product_info  
+      - MYSQL_PORT=3306
+      - EUREKA_SERVER=naming-service
+    restart: on-failure
+    networks:
+      - some-net
+
+  emp-service:
+    image: gopinathviswa/emp-service
+    ports:
+      - 8104:8104
+    environment:
+      - MYSQL_HOST=mysql-emp
+      - MYSQL_USER=gviswana
+      - MYSQL_PASSWORD=password
+      - MYSQL_DB=emp_info  
+      - MYSQL_PORT=3306
+      - EUREKA_SERVER=naming-service
+    restart: on-failure
+    networks:
+      - some-net
