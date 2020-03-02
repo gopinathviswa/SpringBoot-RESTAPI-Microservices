@@ -53,3 +53,7 @@ docker-compose up -d
 
 Before executing the command come back to home folder of the project
 
+docker-compose down
+
+is the command used to stop the containers
+
