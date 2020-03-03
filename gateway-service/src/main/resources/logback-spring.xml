@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
+	<springProperty scope="context" name="applicationName" source="spring.application.name"/>	
+    <springProperty scope="context" name="logstashHost" source="logstash.host"/>
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
             <Pattern>
-                %green(%d{yyyy-MM-dd HH:mm:ss}) %magenta([%thread]) %blue(%-5level) %yellow(%logger{36}) - %msg%n
+                %green(%d{yyyy-MM-dd HH:mm:ss}) [${applicationName}]  %magenta([%thread]) %blue(%-5level) %yellow(%logger{36}) - %msg%n
             </Pattern>
         </layout>
     </appender>
 
     <appender name="STASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>localhost:4560</destination>
+        <!-- <destination>localhost:4560</destination> -->
+        <remoteHost>${logstashHost}</remoteHost>
+        <port>4560</port>
         <!-- encoder is required -->
         <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
 
