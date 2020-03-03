@@ -44,17 +44,17 @@ sudo apt-get install openjdk-8-jdk
 2. Build the microservice using mvn cmd
 3. Build the docker image of each microservice using following command
 
-  docker build -t gopinathviswa/{$service name} .
+    docker build -t gopinathviswa/{$service name} .
 
-  Before executing the command move to respective microservice folder
+    Before executing the command move to respective microservice folder
 
 4. Now execute the docker compose file using 
 
-  docker-compose up -d
+    docker-compose up -d
 
-Before executing the command come back to home folder of the project
+5. Before executing the command come back to home folder of the project
 
-  docker-compose down
+    docker-compose down
 
-is the command used to stop the containers
+   is the command used to stop the containers
 
