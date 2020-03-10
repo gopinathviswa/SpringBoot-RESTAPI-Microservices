@@ -107,6 +107,8 @@ services:
     image: gopinathviswa/naming-service
     ports:
       - 8761:8761
+    environment:
+      - LOGSTASH_SERVER=192.168.0.2
     restart: on-failure
     networks:
       - some-net
@@ -117,6 +119,7 @@ services:
       - 8090:8090
     environment:
       - EUREKA_SERVER=naming-service
+      - LOGSTASH_SERVER=192.168.0.2
     restart: on-failure
     networks:
       - some-net
@@ -127,6 +130,7 @@ services:
       - 8105:8105
     environment:
       - EUREKA_SERVER=naming-service
+      - LOGSTASH_SERVER=192.168.0.2
     restart: on-failure
     networks:
       - some-net
@@ -142,6 +146,7 @@ services:
       - MYSQL_DB=town_info  
       - MYSQL_PORT=3306
       - EUREKA_SERVER=naming-service
+      - LOGSTASH_SERVER=192.168.0.2
     restart: on-failure
     networks:
       - some-net
@@ -157,6 +162,7 @@ services:
       - MYSQL_DB=branch_info  
       - MYSQL_PORT=3306
       - EUREKA_SERVER=naming-service
+      - LOGSTASH_SERVER=192.168.0.2
     restart: on-failure
     networks:
       - some-net
@@ -172,6 +178,7 @@ services:
       - MYSQL_DB=empcard_info  
       - MYSQL_PORT=3306
       - EUREKA_SERVER=naming-service
+      - LOGSTASH_SERVER=192.168.0.2
     restart: on-failure
     networks:
       - some-net
@@ -187,6 +194,7 @@ services:
       - MYSQL_DB=product_info  
       - MYSQL_PORT=3306
       - EUREKA_SERVER=naming-service
+      - LOGSTASH_SERVER=192.168.0.2
     restart: on-failure
     networks:
       - some-net
@@ -202,6 +210,7 @@ services:
       - MYSQL_DB=emp_info  
       - MYSQL_PORT=3306
       - EUREKA_SERVER=naming-service
+      - LOGSTASH_SERVER=192.168.0.2
     restart: on-failure
     networks:
       - some-net

@@ -23,6 +23,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.viswagopi.components.BranchNotFoundException;
 import com.viswagopi.model.Branch;
+import com.viswagopi.model.ProjectStatus;
 import com.viswagopi.repository.BranchRepository;
 
 @RestController
@@ -68,13 +69,16 @@ public class BranchController {
 	}
 	
 	@PostMapping("/import")
-	public ResponseEntity<String> createTown(@RequestBody List<Branch> branch) {
+	public ResponseEntity<ProjectStatus> createTown(@RequestBody List<Branch> branch) {
 		try {
 			branchRepository.saveAll(branch);
-
-			return new ResponseEntity<String>("Successfully imported Branches", HttpStatus.OK);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Successfully imported Branchs");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.OK);
 		}catch(Exception exc) {
-			return new ResponseEntity<String>(" Invalid data for Branch"+"/n"+exc, HttpStatus.INTERNAL_SERVER_ERROR);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Invalid data for Town");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 	  

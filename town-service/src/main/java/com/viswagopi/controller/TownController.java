@@ -25,6 +25,7 @@ import com.opencsv.CSVWriter;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.viswagopi.components.TownNotFoundException;
+import com.viswagopi.model.ProjectStatus;
 import com.viswagopi.model.Town;
 import com.viswagopi.repository.TownRepository;
 
@@ -71,13 +72,16 @@ public class TownController {
 	}
 	
 	@PostMapping("/import")
-	public ResponseEntity<String> createTown(@RequestBody List<Town> town) {
+	public ResponseEntity<ProjectStatus> createTown(@RequestBody List<Town> town) {
 		try {
 			townRepository.saveAll(town);
-
-			return new ResponseEntity<String>("Successfully imported Towns", HttpStatus.OK);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Successfully imported Towns");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.OK);
 		}catch(Exception exc) {
-			return new ResponseEntity<String>(" Invalid data for Town", HttpStatus.INTERNAL_SERVER_ERROR);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Invalid data for Town");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 	  

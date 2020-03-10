@@ -23,6 +23,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.viswagopi.components.ProdcutNotFoundException;
 import com.viswagopi.model.Employee;
+import com.viswagopi.model.ProjectStatus;
 import com.viswagopi.repository.EmployeeRepository;
 
 @RestController
@@ -74,13 +75,16 @@ public class EmployeeController {
 	}
 	
 	@PostMapping(path="/import",produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-	public ResponseEntity<String> createEmployee(@RequestBody List<Employee> employee) {
+	public ResponseEntity<ProjectStatus> createEmployee(@RequestBody List<Employee> employee) {
 		try {
 			employeeRepository.saveAll(employee);
-
-			return new ResponseEntity<String>("Successfully imported Employees", HttpStatus.OK);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Successfully imported Employee");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.OK);
 		}catch(Exception exc) {
-			return new ResponseEntity<String>(" Invalid data for Employee", HttpStatus.INTERNAL_SERVER_ERROR);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Invalid data for Employee");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 	  

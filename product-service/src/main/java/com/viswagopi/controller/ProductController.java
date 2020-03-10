@@ -20,6 +20,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.viswagopi.components.ProdcutNotFoundException;
 import com.viswagopi.model.Product;
+import com.viswagopi.model.ProjectStatus;
 import com.viswagopi.repository.ProductRepository;
 
 @RestController
@@ -64,13 +65,16 @@ public class ProductController {
 	}
 	
 	@PostMapping(path="/import",produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-	public ResponseEntity<String> createProduct(@RequestBody List<Product> product) {
+	public ResponseEntity<ProjectStatus> createProduct(@RequestBody List<Product> product) {
 		try {
 			productRepository.saveAll(product);
-
-			return new ResponseEntity<String>("Successfully imported Products", HttpStatus.OK);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Successfully imported Products");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.OK);
 		}catch(Exception exc) {
-			return new ResponseEntity<String>(" Invalid data for Product", HttpStatus.INTERNAL_SERVER_ERROR);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Invalid data for Products");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 	  

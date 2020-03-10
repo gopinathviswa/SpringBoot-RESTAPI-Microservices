@@ -23,6 +23,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.viswagopi.components.EmpCardNotFoundException;
 import com.viswagopi.model.Empcard;
+import com.viswagopi.model.ProjectStatus;
 import com.viswagopi.repository.EmpcardRepository;
 
 @RestController
@@ -74,13 +75,16 @@ public class EmpcardController {
 	}
 	
 	@PostMapping(path="/import",produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-	public ResponseEntity<String> createEmpcard(@RequestBody List<Empcard> empcard) {
+	public ResponseEntity<ProjectStatus> createEmpcard(@RequestBody List<Empcard> empcard) {
 		try {
 			empcardRepository.saveAll(empcard);
-
-			return new ResponseEntity<String>("Successfully imported Empcards", HttpStatus.OK);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Successfully imported Empcards");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.OK);
 		}catch(Exception exc) {
-			return new ResponseEntity<String>(" Invalid data for Empcard", HttpStatus.INTERNAL_SERVER_ERROR);
+			ProjectStatus status = new ProjectStatus();
+			status.setStatus("Invalid data for Empcards");
+			return new ResponseEntity<ProjectStatus>(status, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 	  
